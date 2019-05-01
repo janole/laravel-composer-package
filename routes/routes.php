@@ -18,7 +18,7 @@ Route::get('hello', function()
     return view('demo-views::hello');
 });
 
-Route::group(['middleware' => ['web', 'auth']], function ()
+Route::group(['middleware' => ['web', /* 'auth' */]], function ()
 {
     // Route::auth();
 
@@ -28,7 +28,7 @@ Route::group(['middleware' => ['web', 'auth']], function ()
     });
 });
 
-Route::group(['middleware' => ['api', 'cors', 'jwt-auth']], function ()
+Route::group(['middleware' => ['api', /* 'cors', 'jwt-auth' */]], function ()
 {
     Route::get("api/v1/me", function()
     {
