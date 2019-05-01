@@ -18,7 +18,7 @@ class PackageServiceProvider extends ServiceProvider
         $this->commands([\janole\Demo\Console\Commands\DemoCommand::class]);
 
         // Register some demo routes
-        $this->loadRoutesFrom(__DIR__.'/../src/routes');
+        $this->loadRoutesFrom(__DIR__.'/../src/routes/routes.php');
 
         // Register some demo views
         // (use them with the corresponding prefix like: @include("demo-views::the-view-name"))
