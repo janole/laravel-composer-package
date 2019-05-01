@@ -1,15 +1,14 @@
 {
     "name": "janole/laravel-composer-package",
     "type": "project",
-    "description": "Just a demo package for Laravel ...",
+    "description": "Just a demo composer package for Laravel ...",
     "keywords": [
         "demo",
         "test",
         "laravel"
     ],
     "license": "MIT",
-    "authors":
-    [
+    "authors": [
         {
             "name": "Jan Ole Suhr",
             "email": "ole@mobileways.de"
@@ -20,24 +19,18 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "autoload":
-    {
-        "psr-4":
-        {
+    "autoload": {
+        "psr-4": {
             "janole\\Demo\\": "src/"
         }
     },
-    "extra":
-    {
-        "laravel":
-        {
-            "providers":
-            [
+    "extra": {
+        "laravel": {
+            "providers": [
                 "janole\\Demo\\PackageServiceProvider"
             ]
         },
-        "branch-alias":
-        {
+        "branch-alias": {
             "dev-master": "1.0-dev"
         }
     }
