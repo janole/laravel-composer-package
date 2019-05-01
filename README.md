@@ -34,7 +34,7 @@ $ php artisan route:list
 
 First, you need to register your package with Laravel.
 
-Just extend an `Illuminate\Support\ServiceProvider` class and add it to an `extra -> laravel -> providers` block in the *composer.json* package description file:
+Just extend an `Illuminate\Support\ServiceProvider` class and add it to an `extra -> laravel -> providers` block in the **composer.json** package description file:
 
 ```
 {
@@ -78,13 +78,13 @@ class PackageServiceProvider extends ServiceProvider
 
 ## Using the views
 
-When registering views, you can specify a *prefix*:
+When registering views, you can specify a **prefix**:
 
 ```php
 $this->loadViewsFrom(__DIR__.'/../resources/views', 'prefix');
 ```
 
-Now, you can simply start using the views (_Blade Templates_) in your *Laravel* app like this:
+Now, you can simply start using the views (_Blade Templates_) in your **Laravel** app like this:
 
 ```blade
 @include("prefix::the-view-name", ...)
