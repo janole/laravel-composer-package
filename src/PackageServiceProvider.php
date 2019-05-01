@@ -14,11 +14,14 @@ class PackageServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        // Register an artisan command ...
+        // Register an artisan command ... (php artisan demo:command)
         $this->commands([\janole\Demo\Console\Commands\DemoCommand::class]);
 
-        // $this->loadRoutesFrom(__DIR__.'/../src/routes.php');
+        // Register some demo routes
+        $this->loadRoutesFrom(__DIR__.'/../src/routes');
 
-    	// $this->loadViewsFrom(__DIR__.'/../resources/views', 'demo-views');
+        // Register some demo views
+        // (use them with the corresponding prefix like: @include("demo-views::the-view-name"))
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'demo-views');
     }
 }
