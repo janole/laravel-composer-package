@@ -93,3 +93,5 @@ Now, you can simply start using the views (_Blade Templates_) in your *Laravel* 
 ## References
 
 [Laravel Package Development](https://laravel.com/docs/5.8/packages)
+
+[Laravel Package Development Basics](https://pineco.de/laravel-package-development-basics/)
