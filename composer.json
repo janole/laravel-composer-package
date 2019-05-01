@@ -1,7 +1,12 @@
 {
     "name": "janole/laravel-composer-package",
-    "description": "Just a demo package for Laravel ...",
     "type": "project",
+    "description": "Just a demo package for Laravel ...",
+    "keywords": [
+        "demo",
+        "test",
+        "laravel"
+    ],
     "license": "MIT",
     "authors":
     [
@@ -10,7 +15,11 @@
             "email": "ole@mobileways.de"
         }
     ],
+    "require": {
+        "laravel/framework": "^5.5"
+    },
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload":
     {
         "psr-4":
