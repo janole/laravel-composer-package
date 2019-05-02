@@ -1,5 +1,5 @@
 # laravel-composer-package
-This is a demo composer package for Laravel. It will show you how to add views, routes and even an `artisan` command.
+This is a demo composer package for Laravel. It will show you how to add views, routes and even an `artisan` command. You could use this project as a starting point for creating your own packages :wink:.
 
 ## Installation
 
